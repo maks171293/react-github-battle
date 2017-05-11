@@ -1,8 +1,8 @@
 body{
   background-color: #222;
   color: #ddd;
-  text-align: center;
   font-family: sans-serif;;
+  text-align: center;
 }
 
 ul {
@@ -66,4 +66,31 @@ li {
   width: 70px;
   margin-top: 10px;
   margin-bottom: 15px;
+}
+
+.nav{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+}
+.nav li {
+  margin-right: 15px;
+}
+.nav a{
+  color: #ff3300;
+  text-decoration: none;
+}
+.active{
+  font-weight: bold;
+}
+
+.home_container{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-align-items: center;
+  align-items: center;
 }
