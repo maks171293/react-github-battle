@@ -28,3 +28,42 @@ li {
   margin: 15px;
   cursor: pointer;
 }
+
+.popular_list {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;;
+}
+
+.repo_item{
+  margin: 40px 20px;
+  min-width: 150px;
+  padding: 10px;
+}
+.repo_item a{
+  font-size: 13px;
+  display: block;
+  text-align: center;
+  color: #ff4400;
+  text-decoration: none;
+}
+.repo_item p{
+  font-size: 12px;
+}
+.repo_item h4{
+  font-size: 14px;
+  margin-top: 10px;
+  color: #f9f9f9;
+}
+.repo_item a:hover{
+  text-decoration: underline;
+}
+
+.repo_avatar{
+  border-radius: 50%;
+  width: 70px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
