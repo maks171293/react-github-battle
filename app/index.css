@@ -61,7 +61,7 @@ li {
   text-decoration: underline;
 }
 
-.repo_avatar{
+.repo_avatar, .avatar{
   border-radius: 50%;
   width: 70px;
   margin-top: 10px;
@@ -93,4 +93,121 @@ li {
   flex-direction: column;
   -ms-align-items: center;
   align-items: center;
+}
+
+.battle_page{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;;
+}
+
+.player_form{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+}
+
+.button {
+  font-family: sans-serif;
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  line-height: 38px;
+  display: inline-block;
+  border: 3px solid #000;
+  color: #000;
+  z-index: 3;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-shadow: 0 0 0.1px #000;
+  margin:  20px auto;
+  cursor: pointer;
+  background-color: transparent;
+}
+.button::after {
+  z-index: -1;
+  content: "";
+  width: 200px;
+  height: 40px;
+  position: absolute;
+  background-color: #000;
+  top: -40px;
+  left: 0;
+  transition: all 0.2s ease;
+}
+.button:hover {
+  color: #ff3300;
+  cursor: pointer;
+}
+.button:hover::after {
+  content: " ";
+  width: 200px;
+  height: 40px;
+  position: absolute;
+  background-color: #000;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.battleForm input {
+  background-color: transparent;
+  border: none;
+  margin: 60px auto;
+  padding: 10px;
+  position: relative;
+  transition: all .3s ease;
+  border-right: 20px;
+  color: #fff;
+  box-shadow: 0 0 0 1px black;
+}
+
+.battleForm input:focus{
+  box-shadow: 0 0 0 2px white;
+}
+.battleForm .header {
+  font-weight: 400;
+  font-size: 20px;
+  font-family: sans;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.column{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-align-items: center;
+  align-items: center;
+}
+.column .avatar {
+  margin-top: 40px;
+  width: 100px;
+}
+
+.reset{
+  border: none;
+  background-color: transparent;
+  color: #ff3311;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.reset:hover{
+  cursor: pointer;
 }
